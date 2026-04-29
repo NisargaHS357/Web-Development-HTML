@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Arrivals - CSS Box Model</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Section Title -->
+        <div class="section-title">
+            <h1>✨ New Arrivals ✨</h1>
+            <p>Check out our latest collection - Fresh styles just landed!</p>
+        </div>
+        
+        <!-- Product Grid -->
+        <div class="products-grid">
+            
+            <!-- Product Card 1: Stylish Denim Jacket -->
+            <div class="product-card">
+                <div class="badge">New</div>
+                <div class="product-image">
+                    <!-- Replace "jacket.jpg" with your actual image file name -->
+                    <img src="images/jacket.jpg" alt="Stylish Denim Jacket" onerror="this.src='https://picsum.photos/280/180?random=1'">
+                </div>
+                <div class="product-title">Stylish Denim Jacket</div>
+                <div class="product-description">
+                    Premium quality denim jacket perfect for all seasons.
+                </div>
+                <div class="product-price">
+                    $79.99
+                    <span class="original-price">$129.99</span>
+                </div>
+                <button class="shop-btn">Shop Now →</button>
+            </div>
+            
+            <!-- Product Card 2: Air Running Shoes -->
+            <div class="product-card">
+                <div class="badge">Best Seller</div>
+                <div class="product-image">
+                    <!-- Replace "shoes.jpg" with your actual image file name -->
+                    <img src="images/shoes.jpg" alt="Air Running Shoes" onerror="this.src='https://picsum.photos/280/180?random=2'">
+                </div>
+                <div class="product-title">Air Running Shoes</div>
+                <div class="product-description">
+                    Lightweight comfort with advanced cushioning technology.
+                </div>
+                <div class="product-price">
+                    $99.99
+                    <span class="original-price">$149.99</span>
+                </div>
+                <button class="shop-btn">Shop Now →</button>
+            </div>
+            
+            <!-- Product Card 3: Smart Watch Pro -->
+            <div class="product-card">
+                <div class="badge">Limited Edition</div>
+                <div class="product-image">
+                    <!-- Replace "watch.jpg" with your actual image file name -->
+                    <img src="images/watch.jpg" alt="Smart Watch Pro" onerror="this.src='https://picsum.photos/280/180?random=3'">
+                </div>
+                <div class="product-title">Smart Watch Pro</div>
+                <div class="product-description">
+                    Track your fitness, calls, and notifications seamlessly.
+                </div>
+                <div class="product-price">
+                    $199.99
+                    <span class="original-price">$299.99</span>
+                </div>
+                <button class="shop-btn">Shop Now →</button>
+            </div>
+            
+            <!-- Product Card 4: Travel Backpack -->
+            <div class="product-card">
+                <div class="badge">New</div>
+                <div class="product-image">
+                    <!-- Replace "backpack.jpg" with your actual image file name -->
+                    <img src="images/backpack.jpg" alt="Travel Backpack" onerror="this.src='https://picsum.photos/280/180?random=4'">
+                </div>
+                <div class="product-title">Travel Backpack</div>
+                <div class="product-description">
+                    Spacious, durable, and perfect for your next adventure.
+                </div>
+                <div class="product-price">
+                    $59.99
+                    <span class="original-price">$89.99</span>
+                </div>
+                <button class="shop-btn">Shop Now →</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Box Model Explanation Section -->
+    <div class="explanation-box">
+        <h2>📦 Understanding the CSS Box Model Used Here</h2>
+        <table class="box-model-table">
+            <tr>
+                <th>Box Model Property</th>
+                <th>Where We Used It</th>
+                <th>What It Does</th>
+            </tr>
+            <tr>
+                <td><b>Content</b></td>
+                <td>.product-card width: 280px</td>
+                <td>Sets the content area width of each product card</td>
+            </tr>
+            <tr>
+                <td><b>Padding</b></td>
+                <td>.product-card padding: 20px</td>
+                <td>Creates space INSIDE each card between content and border</td>
+            </tr>
+            <tr>
+                <td><b>Border</b></td>
+                <td>.product-card border: 1px solid #e0e0e0</td>
+                <td>Draws a visible edge around each product card</td>
+            </tr>
+            <tr>
+                <td><b>Margin</b></td>
+                <td>.products-grid gap: 30px</td>
+                <td>Creates space OUTSIDE cards between them</td>
+            </tr>
+            <tr>
+                <td><b>box-sizing</b></td>
+                <td>* { box-sizing: border-box; }</td>
+                <td>Makes padding and border included in width calculation</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
