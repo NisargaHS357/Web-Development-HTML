@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <title>SVYASA Library Portal</title>
+        <!-- Link to external CSS file -->
+        <link rel="stylesheet" href="libstyle.css">
+        </head>
+        <body bgcolor="skyblue">
+            <nav>
+                <a href="HOME.HTML">Home</a>
+                <a href="aboutus.html">About Us</a>
+            </nav>
+            <h1>SVYASA Library book requesting portal</h1>
+            <p>Dear Users,You can suggest a new book to library books repository
+                by specifying a new book title and author and publisher to the 
+                library through this portal.
+            </p>
+            
+            <form>
+
+                <fieldset>
+                    <legend>Student Information </legend>
+
+                    Name:
+                    <input type="text"><br><br>
+
+                    Email:
+                    <input type="text"><br><br>
+
+                    Deparment:
+                    <input type="text">
+
+                </fieldset>
+                <fieldset>
+                    <legend>Book Information</legend>
+                    Book Title:
+                    <input type="text"><br><br>
+                    Author Name:
+                    <input type="text"><br><br>
+                    Bookd Edition:
+                    <input type="text"><br><br>
+                    preferred format:
+                    <input type="radio" name="format">Printed copy</input>
+                    <input type="radio" name="format">E-Copy</input>
+                </fieldset>
+                <fieldset>
+                    <legend>Department</legend>
+                    <input type="checkbox">Engineering</input><br><br>
+                    <input type="checkbox">Management</input><br><br>
+                    <input type="checkbox">Science</input><br><br>
+                    <input type="checkbox">Yoga and Natural Therapy</input>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <textarea rows="5" cols="30"></textarea>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+        </body>
+        </html>
